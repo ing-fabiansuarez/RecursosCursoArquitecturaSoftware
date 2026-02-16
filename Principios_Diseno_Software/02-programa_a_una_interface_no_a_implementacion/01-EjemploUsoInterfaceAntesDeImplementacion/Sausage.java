@@ -1,7 +1,10 @@
-public class Sausage
+public class Sausage implements Food
 {
     public void Sausage(){
     }
+    
+    
+    @Override
     public int getNutrition(){
         return 1;
     }

@@ -2,6 +2,4 @@
 comment0.target=Main
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment2.params=order
-comment2.target=double\ getOrderTotal(Order)
-numComments=3
+numComments=2

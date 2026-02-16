@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=TaxCalculator
+comment1.params=country\ state\ product
+comment1.target=double\ getTaxRate(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=state
+comment2.target=double\ getUSTax(java.lang.String)
+comment3.params=country
+comment3.target=double\ getEUTax(java.lang.String)
+comment4.params=product
+comment4.target=double\ getChineseTax(java.lang.String)
+numComments=5

@@ -1,14 +1,12 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class Company {
+public abstract class Company {
+    
+    public abstract List<Employee> getEmployees();
 
     public void createSoftware() {
-        List<Employee> employees = new ArrayList<>();
-
-        employees.add(new Designer());
-        employees.add(new Programmer());
-        employees.add(new Tester());
+        List<Employee> employees = getEmployees();
 
         for (Employee e : employees) {
             e.doWork();

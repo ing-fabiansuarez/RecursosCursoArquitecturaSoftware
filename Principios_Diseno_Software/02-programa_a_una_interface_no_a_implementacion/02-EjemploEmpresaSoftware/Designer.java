@@ -1,6 +1,7 @@
-public class Designer {
+public class Designer implements Employee {
 
-    public void designArchitecture() {
+    @Override
+    public void doWork() {
         System.out.println("Designing software architecture...");
     }
 }

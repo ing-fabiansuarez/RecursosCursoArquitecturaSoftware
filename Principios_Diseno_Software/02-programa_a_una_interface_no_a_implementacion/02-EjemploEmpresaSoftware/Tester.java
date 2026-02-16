@@ -1,6 +1,7 @@
-public class Tester {
+public class Tester implements Employee{
 
-    public void testSoftware() {
+    @Override
+    public void doWork() {
         System.out.println("Testing software...");
     }
 }

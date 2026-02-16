@@ -1,13 +1,17 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class Company {
 
     public void createSoftware() {
-        Designer d = new Designer();
-        d.designArchitecture();
+        List<Employee> employees = new ArrayList<>();
 
-        Programmer p = new Programmer();
-        p.writeCode();
+        employees.add(new Designer());
+        employees.add(new Programmer());
+        employees.add(new Tester());
 
-        Tester t = new Tester();
-        t.testSoftware();
+        for (Employee e : employees) {
+            e.doWork();
+        }
     }
 }

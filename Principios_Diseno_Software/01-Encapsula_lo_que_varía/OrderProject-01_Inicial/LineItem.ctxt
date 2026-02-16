@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=LineItem
+comment1.params=price\ quantity
+comment1.target=LineItem(double,\ int)
+comment2.params=
+comment2.target=double\ getPrice()
+comment3.params=
+comment3.target=int\ getQuantity()
+numComments=4

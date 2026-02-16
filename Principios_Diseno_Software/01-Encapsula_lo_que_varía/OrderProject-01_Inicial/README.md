@@ -36,3 +36,32 @@ method getOrderTotal(order) {
     return total 
 }
 ```
+
+
+### DESPUÉS: Lógica extraída
+
+Puedes extraer la lógica de cálculo del impuesto a un método separado, escondiéndolo del método original.
+Ahora puedes obtener la tasa impositiva invocando un método designado.
+
+Los cambios relacionados con el impuesto quedan aislados dentro de un único método. Además, si la lógica de cálculo del impuesto se complica demasiado, ahora es más sencillo moverla a una clase separada.
+
+```java
+method getOrderTotal(order) {
+    total = 0
+    foreach item in order.lineItems 
+        total += item.price * item.quantity 
+    
+    total += total * getTaxRate(order.country) 
+    
+    return total 
+}
+
+method getTaxRate(country) {
+    if (country == "US") 
+        return 0.07 // Impuesto sobre la venta de EUA 
+    else if (country == "EU") 
+        return 0.20 // IVA europeo 
+    else 
+        return 0 
+}
+```
